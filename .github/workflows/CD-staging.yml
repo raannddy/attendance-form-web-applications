@@ -9,7 +9,6 @@ jobs:
     name: Deploy to staging server
     runs-on: ubuntu-latest
     environment: staging
-
     steps:
       - name: Execute deployment command
         uses: appleboy/ssh-action@v1.0.3
