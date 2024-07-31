@@ -15,7 +15,7 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         env:
           APP_PATH_STAGING: ${{ vars.APP_PATH_STAGING }}
-          GIT_URL: ${{ vars.GIT_URL }}
+          GIT_URL: ${{ secrets.GIT_URL }}
           POSTGRES_USER: ${{ secrets.DB_USER_STAGING }}
           POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD_STAGING }}
           POSTGRES_DB: ${{ vars.DB_DBNAME_STAGING }}
